@@ -8,7 +8,7 @@
     "start": "NEXT_RUNTIME=classic NEXT_DISABLE_SWC=1 NEXT_TELEMETRY_DISABLED=1 node --no-wasm-code-gc node_modules/next/dist/bin/next start -p 10000"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "15.5.6",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
