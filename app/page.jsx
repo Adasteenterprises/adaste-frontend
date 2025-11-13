@@ -21,7 +21,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800 p-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">Adaste SACCO Loan Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Adaste Credit Your Trusted Credit Partner</h1>
       {loading ? (
         <p className="text-center">Loading loans...</p>
       ) : loans.length === 0 ? (
