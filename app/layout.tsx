@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -50,15 +51,27 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
       >
-        <header className="p-4 text-center shadow-sm bg-white">
-          <h1 className="text-2xl font-bold text-blue-700">Adaste Credit</h1>
-          <p className="text-sm text-gray-500">
-            Your Trusted Credit Partner
-          </p>
+        {/* Header Navigation */}
+        <header className="p-4 shadow-sm bg-white flex justify-between items-center">
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/logo.png" alt="Adaste Credit" className="h-8" />
+            <span className="text-xl font-bold text-blue-700">Adaste Credit</span>
+          </Link>
+          <nav className="space-x-6 text-sm font-medium text-gray-700">
+            <Link href="/" className="hover:text-blue-700">Home</Link>
+            <Link href="/dashboard" className="hover:text-blue-700">Dashboard</Link>
+            <Link href="#services" className="hover:text-blue-700">Services</Link>
+            <Link href="#about" className="hover:text-blue-700">About</Link>
+            <Link href="#contact" className="hover:text-blue-700">Contact</Link>
+          </nav>
         </header>
-        <main className="min-h-screen p-6">{children}</main>
-        <footer className="p-4 text-center border-t text-sm text-gray-600 bg-white">
-          © {new Date().getFullYear()} Adaste Credit. All rights reserved.
+
+        <main className="min-h-screen">{children}</main>
+
+        {/* Footer */}
+        <footer className="p-6 text-center border-t text-sm text-gray-600 bg-white">
+          <p>© {new Date().getFullYear()} Adaste Credit. All rights reserved.</p>
+          <p className="text-xs text-gray-400">Your Trusted Credit Partner</p>
         </footer>
       </body>
     </html>
