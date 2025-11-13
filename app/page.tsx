@@ -11,7 +11,7 @@ export default function Home() {
           and transparent financial solutions.
         </p>
         <a
-          href="#apply"
+          href="/dashboard"
           className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-100 transition"
         >
           Apply for a Loan
@@ -38,5 +38,36 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-blue-700">
+                Personal Loans
+              </h3>
+              <p className="text-gray-700">
+                Flexible personal loans designed to meet your everyday needs,
+                from emergencies to home projects.
+              </p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2 text-blue-700">
+                Business Loans
+              </h3>
+              <p className="text-gray-700">
+                Boost your business with affordable financing solutions tailored
+                to entrepreneurs and SMEs.
+              </p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2 text-blue-700">
+                Salary Advance
+              </h3>
+              <p className="text-gray-700">
+                Get quick access to funds when you need them most with our
+                fast-tracked salary advance service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
 
