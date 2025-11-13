@@ -1,7 +1,9 @@
 {
   "name": "adaste-frontend",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "NEXT_RUNTIME=classic NEXT_DISABLE_SWC=1 NEXT_TELEMETRY_DISABLED=1 node --no-wasm-code-gc node_modules/next/dist/bin/next dev --hostname 0.0.0.0 --port 3000",
     "build": "NEXT_RUNTIME=classic NEXT_DISABLE_SWC=1 NEXT_TELEMETRY_DISABLED=1 node --no-wasm-code-gc node_modules/next/dist/bin/next build",
@@ -13,6 +15,9 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.3",
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",
@@ -24,4 +29,3 @@
     "node": ">=18.x"
   }
 }
-
